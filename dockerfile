@@ -1,15 +1,10 @@
-# Meteor v. 1.7.0.3
-
-FROM ubuntu:16.04
+# Meteor v. 1.8.0.0
+# hub.docker.com/strictlyskyler/meteor-environment
+FROM node:8.11
 MAINTAINER Skyler Brungardt <skyler.brungardt@gmail.com>
 
-RUN apt update
-RUN apt install -y curl build-essential git
-
-FROM node:8.11.3
+RUN apt-get update
+RUN apt-get install -y curl
 RUN curl https://install.meteor.com/ | sh
-RUN npm install -g forever
 
-EXPOSE 3000
-
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["./start.sh"]
