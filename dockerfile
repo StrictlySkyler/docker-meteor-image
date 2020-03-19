@@ -1,6 +1,6 @@
-# Meteor v. 1.8.0.0
+# Meteor v. 1.10.1
 # hub.docker.com/strictlyskyler/meteor-environment
-FROM node:8.11
+FROM node:12.16.1
 MAINTAINER Skyler Brungardt <skyler.brungardt@gmail.com>
 
 RUN apt-get update
