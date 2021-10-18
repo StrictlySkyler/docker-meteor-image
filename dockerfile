@@ -1,6 +1,6 @@
 # Meteor and Node latest
 # hub.docker.com/strictlyskyler/meteor-environment
-FROM node:latest
+FROM node:14
 LABEL maintainer="Skyler Brungardt <skyler.brungardt@gmail.com>"
 
 RUN apt-get update
